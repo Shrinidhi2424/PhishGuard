@@ -1,0 +1,21 @@
+url,label,category,notes
+https://www.google.com,0,obvious_legit,World's most visited site
+https://www.github.com,0,obvious_legit,Developer platform
+https://www.bbc.com/news,0,obvious_legit,Major news outlet
+https://www.amazon.com/dp/B09ABC123,0,obvious_legit,Long e-commerce URL
+https://www.linkedin.com/in/someperson,0,obvious_legit,Professional network
+http://paypal-secure-login.verify-account.tk/signin,1,obvious_phishing,Suspicious TLD + brand impersonation
+http://192.168.1.1/bank/login,1,obvious_phishing,Raw IP address as host
+http://bit.ly/3xAbc9q,1,obvious_phishing,URL shortener hiding destination
+http://apple-id-verify.support-login.ml/account,1,obvious_phishing,Multiple red flags: brand + free TLD
+http://microsoft-update-required.com@attacker.ru/verify,1,obvious_phishing,@ symbol trick
+https://paypal.com.secure-login.net/verify,1,borderline,Legitimate brand in subdomain only
+https://www.dropbox.com.file-share.co/dl/abc123,1,borderline,Legitimate brand + suspicious registrar
+https://smallbusiness-accounting.com/login,0,borderline,Legitimate small biz with hyphen
+https://update.flash-player-download.com,1,borderline,Fake software update (common vector)
+https://secure.chase.com.onlinebanking.biz/auth,1,borderline,Chase brand in subdomain of suspicious domain
+https://www.nhs.uk/conditions/diabetes,0,obvious_legit,Government health site
+https://docs.google.com/forms/d/e/ABC123/viewform,0,obvious_legit,Long Google Forms URL
+http://free-iphone-winner.giveaway.ga,1,obvious_phishing,Prize scam + free TLD
+https://account-security-alert.com/verify-identity,1,borderline,No brand + alarming path keywords
+https://www.reddit.com/r/cybersecurity,0,obvious_legit,Well-known community platform
