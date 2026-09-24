@@ -1,0 +1,31 @@
+# Core data science
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+xgboost==2.1.1
+
+# URL feature parsing
+tldextract==5.1.2
+requests==2.32.3
+
+# Explainability
+shap==0.46.0
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Web application
+streamlit==1.38.0
+
+# Utilities
+joblib==1.4.2
+python-whois==0.9.5
+
+# Testing
+pytest==8.3.2
+pytest-cov==5.0.0
+
+# Notebook support
+jupyter==1.1.1
+ipykernel==6.29.5
