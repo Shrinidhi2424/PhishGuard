@@ -88,7 +88,23 @@ def download_tranco():
             with z.open("top-1m.csv") as f:
                 df = pd.read_csv(f, names=["rank", "domain"])
         domains = df["domain"].dropna().tolist()[:MAX_PER_CLASS * 2]
-        urls = [f"https://{d}" for d in domains]
+        # In the wild, legitimate URLs include www, common subdomains, and diverse paths.
+        # Generating realistic URL variations prevents synthetic distribution shift (e.g. assuming any path > 10 chars is phishing).
+        subdomains = ["", "www.", "", "www.", "", "docs.", "blog.", "support.", "en."]
+        paths = [
+            "", "", "",
+            "/about", "/contact", "/home", "/login", "/news", "/help", "/faq",
+            "/privacy-policy", "/terms-and-conditions", "/products/item/10293",
+            "/dp/B08N5WRWNW", "/in/profile-name", "/r/technology",
+            "/conditions/diabetes", "/docs/forms/d/e/viewform",
+            "/watch?v=dQw4w9WgXcQ", "/search?q=cybersecurity+research",
+            "/article/2026/05/global-update", "/category/news/today"
+        ]
+        urls = []
+        for i, d in enumerate(domains):
+            sub = subdomains[i % len(subdomains)]
+            p = paths[i % len(paths)]
+            urls.append(f"https://{sub}{d}{p}")
         logger.info(f"Loaded {len(urls)} legitimate URLs from Tranco.")
         return urls
     except Exception as e:

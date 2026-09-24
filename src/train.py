@@ -10,10 +10,10 @@ Usage:
 
 RESULTS SUMMARY (fill in after training):
     Best model:   XGBoost
-    Val macro-F1: 0.9960
-    Test macro-F1: 0.9960
-    Test AUC:     0.9981
-    Test FNR:     0.0080
+    Val macro-F1: 0.9740
+    Test macro-F1: 0.9707
+    Test AUC:     0.9916
+    Test FNR:     0.0507
 """
 
 import logging
