@@ -1,0 +1,7 @@
+url_length,has_ip_address,has_at_symbol,num_hyphens_in_domain,num_dots,num_subdomains,has_https,has_suspicious_tld,has_url_shortener,digit_ratio,has_double_slash_in_path,special_char_count,domain_length,has_brand_keyword_mismatch,path_length,num_query_params,has_redirect_in_query,url_entropy,has_port_in_url,label,url,y_pred
+22,0,0,0,1,0,1,0,0,0.0,0,0,2,0,8,0,0,3.481714572986073,0,0,https://ca.gov/contact,1
+22,0,0,0,1,0,1,0,0,0.0909090909090909,0,0,5,0,6,0,0,3.879664004902594,0,0,https://15min.lt/about,1
+22,0,0,0,1,0,1,0,0,0.0,0,0,3,0,8,0,0,3.2610439833372844,0,0,https://cbc.ca/contact,1
+56,0,0,0,2,1,1,0,0,0.0,0,0,34,0,6,0,0,4.135055984705023,0,0,https://docs.meandyourmamahavesomethingincommon.de/about,1
+36,0,0,0,1,0,1,0,0,0.0,0,0,17,0,8,0,0,3.8847954873731343,0,0,https://youronlinechoices.eu/contact,1
+34,0,0,1,1,0,1,0,0,0.0294117647058823,0,0,22,0,0,0,0,3.822181958642872,0,0,https://hubspotusercontent-na1.net,1
