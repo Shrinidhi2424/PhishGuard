@@ -123,6 +123,9 @@ def clean_urls(urls: list, label: int) -> pd.DataFrame:
             url = normalize_url(str(url).strip())
             if url in seen:
                 continue
+            # Filter out URLs with Telegram bot tokens to prevent GitHub Secret Scanning alerts
+            if "api.telegram.org/bot" in url.lower():
+                continue
             if is_valid_url(url):
                 cleaned.append({"url": url, "label": label})
                 seen.add(url)
